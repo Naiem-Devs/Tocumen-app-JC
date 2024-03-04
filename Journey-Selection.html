@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Journey-Selection</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+
+       
+    <!-- header-area START -->
+    <div class="header-area">
+        <div class="container lg">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="logo-area">
+                        <a href="index.html" ><img src="assets/img/Logo.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-area END -->
+
+
+    <main>
+
+
+        <!---------JourneyPlane Section START ---------->
+        <section class="JourneyPack-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="JourneyPack__content">
+                            <div class="JourneyPack__blk">
+                                <h5>Connections at <b>maximum speed</b></h5>
+                                <div class="JourneyPack__info">
+                                    <div class="">
+                                        <h4>Premium Plans</h4>
+                                        <span>from <b>$4</b> USD</span>
+                                    </div>
+                                    <ul>
+                                        <li><i><img src="assets/img/network.svg" alt=""></i> <b>30 mbps</b> download speed</li>
+                                        <li><i><img src="assets/img/connection.svg" alt=""></i> Connect <b>Multiple Devices</b></li>
+                                        <li><i><img src="assets/img/device.svg" alt=""></i> <b>No Ads.</b> Unlimited streaming & browsing</li>
+                                    </ul>
+                                </div>
+                                <a href="Plan-Selection.html" class="thm_btn">Choose your plan</a>
+                            </div>
+                            <div class="JourneyPack__blk">
+                                <h5>Connections at <b> limited speed with Ads</b></h5>
+                                <div class="JourneyPack__info">
+                                    <div class="">
+                                        <h4>Trial Plan</h4>
+                                        <span><b>60</b> minutes</span>
+                                    </div>
+                                    <ul>
+                                        <li><i><img src="assets/img/network.svg" alt=""></i> <b>10 mbps</b> download speed</li>
+                                        <li><i><img src="assets/img/connection.svg" alt=""></i> Connect <b>1 Devices only</b></li>
+                                        <li><i><img src="assets/img/device.svg" alt=""></i> With <b>Ads interruption</b></li>
+                                    </ul>
+                                </div>
+                                <a href="Plan-Selection.html" class="thm_btn">Start Free Trial with Ads</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------JourneyPlane Section End ---------->
+
+
+    </main>
+
+        <!---------footer Section START ---------->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="f__logo">
+                            <a href="index.html"><img src="assets/img/f-logo.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="footer__link">
+                            <a href="#">FAQs</a>
+                            <a href="#"><img src="assets/img/whatsapp.svg" alt=""> +507 6679-6999</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---------footer Section End ---------->
+    
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+<script>
+
+var btns = document.querySelectorAll('.JourneyPack__blk a')
+
+btns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        
+        removeActive()
+        btn.parentElement.classList.add('active')
+    })
+})
+
+function removeActive () {
+    btns.forEach(btn => {
+        btn.parentElement.classList.remove('active')
+    })
+}
+
+</script>
+    </body>
+</html>
+
